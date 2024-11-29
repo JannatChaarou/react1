@@ -1,38 +1,99 @@
-.App {
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.auth-buttons button {
+  background-color: #6a1b9a; /* Purple color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.auth-buttons button:hover {
+  background-color: #4a148c;
+}
+
+
+.content {
+  text-align: center;
+  padding: 50px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 250px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-body h3 {
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-footer {
+  margin-top: 15px;
+}
+
+.card-buttons button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-cart-btn {
+  background-color: grey;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buy-btn {
+  background-color: #6a1b9a;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-buttons button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
 }
